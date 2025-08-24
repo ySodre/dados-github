@@ -15,10 +15,10 @@ jobs:
             - name: Gerar alguns arquivos
               run: |
                 mkdir artefatos
-                echo "Arquivo de teste 01" ./artefatos/primeiro_arquivo.txt
-                echo "Arquivo de teste 02" ./artefatos/segundo_arquivo.txt
-                echo "Arquivo de teste 03" ./artefatos/terceiro_arquivo.txt
-                echo "Arquivo de teste 04" ./artefatos/quarto_arquivo.txt
+                echo "Arquivo de teste 01" > ./artefatos/primeiro_arquivo.txt
+                echo "Arquivo de teste 02" > ./artefatos/segundo_arquivo.txt
+                echo "Arquivo de teste 03" > ./artefatos/terceiro_arquivo.txt
+                echo "Arquivo de teste 04" > ./artefatos/quarto_arquivo.txt
 
             - name: Envio dos arquivos
               uses: actions/upload-artifact@v4
